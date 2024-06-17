@@ -14,6 +14,11 @@ import os
 #Ignore warning
 warnings.filterwarnings('ignore')
 # Streamlit UI
+st.set_page_config(
+    page_title='유해 위험 가이드 챗봇',
+    page_icon='https://i.namu.wiki/i/NgVoid2KU7eIGUnYVeZKBcfdydT9zq9_l69cYGpP1LwOFKn4nnbHe_OhsE3MWPcDtt6jqST_9tUSjyuNw3lNzw.svg',
+    initial_sidebar_state='collapsed'
+)
 st.title("유해 위험 가이드 챗봇")
 # Sidebar for setting up the database
 st.sidebar.header("Database Setup")

@@ -2,6 +2,7 @@
 from . import vectordb
 from . import search
 from . import api_keys
+from . import removeat
 # External Modules
 import pandas as pd
 import numpy as np
