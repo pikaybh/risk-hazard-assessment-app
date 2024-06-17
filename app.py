@@ -37,7 +37,7 @@ if submit_button:
             chatbot(db_directory=db_directory, question=question)
             
             output = sys.stdout.getvalue()
-            if output.lower() in ["quit", "exit", "ㅃㅃ"]:
+            if output.lower() in ["quit", "exit", "ㅃㅃ", "ㅂㅇ"]:
                 exit()
             sys.stdout = old_stdout
             

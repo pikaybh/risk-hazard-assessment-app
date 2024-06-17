@@ -1,10 +1,6 @@
 # vectordb.py
 # %% Internal pkgs
 from utils.api_keys import openai_api_key
-import streamlit as st
-openai_api_key : str = st.secrets["OPENAI_API_KEY"]
-langchain_tracing_v2 : str = st.secrets["LANGCHAIN_TRACING_V2"]
-langchain_api_key : str = st.secrets["LANGCHAIN_API_KEY"]
 # External pkgs
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
