@@ -2,13 +2,10 @@
 # %% Internal pkgs
 from utils.api_keys import openai_api_key
 # External pkgs
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.chat_models import ChatOpenAI
-from langchain.vectorstores import Chroma
-from langchain.retrievers.multi_query import MultiQueryRetriever
-from langchain.chains import RetrievalQA
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import Chroma
 import os
 import logging
 

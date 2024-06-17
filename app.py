@@ -5,8 +5,11 @@ from utils.search import chatbot
 import streamlit as st
 from time import sleep
 from random import randint
+import warnings
 import os
 
+#Ignore warning
+warnings.filterwarnings('ignore')
 # Streamlit UI
 st.title("유해 위험 가이드 챗봇")
 # Sidebar for setting up the database
