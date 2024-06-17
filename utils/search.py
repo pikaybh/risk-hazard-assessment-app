@@ -3,9 +3,10 @@
 # %% Internal pkgs
 from utils.api_keys import openai_api_key
 # External pkgs
-from langchain_openai.embeddings import OpenAIEmbeddings
+# from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_openai.chat_models import ChatOpenAI
 from langchain_community.vectorstores import Chroma
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.retrievers import MultiQueryRetriever
 from langchain.chains import RetrievalQA
 import logging
