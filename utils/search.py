@@ -2,6 +2,7 @@
 # search.py (데이터베이스 호출)
 # %% Internal pkgs
 from utils.api_keys import openai_api_key
+import streamlit as st
 openai_api_key : str = st.secrets["OPENAI_API_KEY"]
 langchain_tracing_v2 : str = st.secrets["LANGCHAIN_TRACING_V2"]
 langchain_api_key : str = st.secrets["LANGCHAIN_API_KEY"]
