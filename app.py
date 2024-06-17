@@ -1,24 +1,3 @@
-import streamlit as st
-import sys
-
-# Get Python version information
-python_version = sys.version
-version_info = sys.version_info
-
-# Streamlit app
-st.title("Python Version Information")
-
-st.write("**Python version:**")
-st.text(python_version)
-
-st.write("**Version info:**")
-st.text(f"Major: {version_info.major}")
-st.text(f"Minor: {version_info.minor}")
-st.text(f"Micro: {version_info.micro}")
-st.text(f"Release level: {version_info.releaselevel}")
-st.text(f"Serial: {version_info.serial}")
-
-"""
 # Internal Modules
 from utils.vectordb import to_db
 from utils.search import chatbot
@@ -63,4 +42,3 @@ if submit_button:
             st.write(output)
     else:
         st.warning("Please enter a question.")
-"""
