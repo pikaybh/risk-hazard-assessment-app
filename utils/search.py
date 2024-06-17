@@ -36,6 +36,7 @@ def chatbot(db_directory : str, question: str) -> None:
         print(openai_api_key.split('-')[0])
     else:
         print("# HI")
+        return
     # Load Chroma database
     db = Chroma(persist_directory=db_directory, embedding_function=OpenAIEmbeddings())
     # QA setup
