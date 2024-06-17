@@ -34,6 +34,7 @@ logger.addHandler(stream_handler)
 def chatbot(db_directory : str, question: str) -> None:
     if openai_api_key:
         print(openai_api_key.split('-')[0])
+        return
     else:
         print("# HI")
         return
