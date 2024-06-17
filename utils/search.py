@@ -32,6 +32,7 @@ stream_handler.setFormatter(logging.Formatter(r'%(message)s'))
 logger.addHandler(stream_handler)
 
 def chatbot(db_directory : str, question: str) -> None:
+    print(openai_api_key.split('-')[0])
     # Load Chroma database
     db = Chroma(persist_directory=db_directory, embedding_function=OpenAIEmbeddings())
     # QA setup
