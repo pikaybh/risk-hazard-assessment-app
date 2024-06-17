@@ -1,3 +1,6 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 # Internal Modules
 from utils.vectordb import to_db
 from utils.search import chatbot
