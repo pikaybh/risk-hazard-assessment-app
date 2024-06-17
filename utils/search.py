@@ -6,7 +6,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.retrievers import MultiQueryRetriever
 from langchain.chains import RetrievalQA
 import streamlit as st
-import pysqlite3  # Ensure pysqlite3 is imported
 
 # Logger setup
 logger_name = 'search'
@@ -64,7 +63,6 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
 
 """
 import logging

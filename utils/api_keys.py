@@ -10,8 +10,13 @@ if ".env" in os.listdir("./"):
     langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
 
 else:
-    import streamlit as st
+    try:
+        import streamlit as st
 
-    openai_api_key = st.secrets["OPENAI_API_KEY"]
-    langchain_tracing_v2 = st.secrets["LANGCHAIN_TRACING_V2"]
-    langchain_api_key = st.secrets["LANGCHAIN_API_KEY"]
+        openai_api_key = st.secrets["OPENAI_API_KEY"]
+        langchain_tracing_v2 = st.secrets["LANGCHAIN_TRACING_V2"]
+        langchain_api_key = st.secrets["LANGCHAIN_API_KEY"]
+    except:
+        openai_api_key = os.getenv("OPENAI_API_KEY")
+        langchain_tracing_v2 = os.getenv("LANGCHAIN_TRACING_V2")
+        langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
